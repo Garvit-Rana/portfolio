@@ -94,7 +94,18 @@ a+=5;
 
 a=10;
 })
+var s=3500;
+c=document.querySelector('#pp');
+c.addEventListener('click',function(){
+d=setInterval(function(){
+if (s>-10)
+window.scrollTo(0,s);
+else clearInterval(d);
+s-=100;
 
+},30)
+s=3000;
+})
 
 
 
